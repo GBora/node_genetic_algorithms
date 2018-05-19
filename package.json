@@ -1,0 +1,17 @@
+{
+  "name": "node_genetic_algorithms",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "keywords": [],
+  "author": "gpbora@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
+}
