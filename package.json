@@ -6,7 +6,7 @@
   "types": "dist/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/tsc"
+    "build": "./node_modules/.bin/tsc && ./post_build.sh"
   },
   "keywords": [],
   "author": "gpbora@gmail.com",
