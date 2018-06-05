@@ -6,12 +6,14 @@
   "types": "dist/main.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/tsc && ./post_build.sh"
+    "build": "./node_modules/.bin/tsc && ./post_build.sh",
+    "documentation": "typedoc --mode modules -module commonjs --exclude **/*.spec.ts --out docs src"
   },
   "keywords": [],
   "author": "gpbora@gmail.com",
   "license": "ISC",
   "devDependencies": {
+    "typedoc": "^0.11.1",
     "typescript": "^2.8.3"
   }
 }
