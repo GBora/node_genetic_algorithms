@@ -51,7 +51,15 @@ export class GenerationService {
     mateIndividuals(mother: Individual, father: Individual, mutationRate: number): Individual {
         let child = new Individual();
         // split up the mother and father into pairs of alleles then select random one for child or mutate it
-        // let alellePair = 
+        for (let i = 0; i < mother.alleles.length; i++) {
+            let allelePair = [mother.alleles[i], father.alleles[i]];
+            let willMutate = Math.random() <= mutationRate;
+            if (willMutate) {
+                //Generate mutated allele
+            } else {
+                child.alleles.push(selectRandomFromArray(allelePair));
+            }
+        }
         return child;
     }
 
